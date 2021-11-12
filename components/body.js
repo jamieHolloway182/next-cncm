@@ -1,10 +1,10 @@
-import Data  from './data'
-import Settings from './settings'
+import Data  from './Data'
+import Settings from './Settings'
 import styles from '../styles/body.module.css'
 import {useRef, useEffect, useState} from 'react'
 import {cleanText, findTextOutBreakPoint} from '../src/init' 
 
-const body = () => {
+const Body = () => {
 
     const textIn = useRef("");
     const textOut = useRef("");
@@ -56,4 +56,4 @@ const body = () => {
     )
 }
 
-export default body
+export default Body
