@@ -19,6 +19,8 @@ const data = ({text, textIn}) => {
     const fullLen = textIn.length;
     const len = text.length;
     const likely = values.likely;
+    const ioc = values.IoC;
+    const chi = values.Chi;
 
     useEffect(()=>{
         for (let i = 0; i < 13; i++){
@@ -27,9 +29,13 @@ const data = ({text, textIn}) => {
     }, [])
 
     useEffect(()=>{
+
         fullLenRef.current.innerHTML = fullLen;
         lenRef.current.innerHTML = len;
-        likelyRef.current.innerHTML = likely
+        likelyRef.current.innerHTML = likely;
+        iocRef.current.innerHTML = ioc;
+        chiRef.current.innerHTML = chi;
+
         for (let i = 0; i < 13; i++){
             freqRef.current.deleteRow(i+1);
             freqRef.current.insertRow(i+1).outerHTML = "<tr><td>"+ALPHA[i]+"</td><td>"+freq[i]+"</td><td>"+ALPHA[i+13]+"</td><td>"+freq[i+13]+"</td></tr>";
@@ -78,15 +84,15 @@ const data = ({text, textIn}) => {
                     </tr>
                     <tr>
                         <td>IoC:</td>
-                        <td>0</td>
+                        <td ref={iocRef}>0</td>
                     </tr>
                     <tr>
                         <td>Chi: </td>
-                        <td>0</td>
+                        <td ref={chiRef}>0</td>
                     </tr>
                     <tr>
                         <td>Time taken: </td>
-                        <td>0</td>
+                        <td ref={timeRef}>0</td>
                     </tr>
                 </table>
             </div>
