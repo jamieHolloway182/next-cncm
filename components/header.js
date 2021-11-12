@@ -1,6 +1,6 @@
 import styles from '../styles/header.module.css'
 
-const header = () => {
+const Header = () => {
     return (
     <div className={styles.header}>
       <div className={styles.headerTitle}>Crooked Nazgul Code Men Official Website</div>
@@ -9,4 +9,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header

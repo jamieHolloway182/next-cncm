@@ -3,7 +3,7 @@ import {ALPHA} from '../src/dependencies'
 import {observedCount} from '../src/init';
 import updateValues from '../src/data'
 
-const data = ({text, textIn}) => {
+const Data = ({text, textIn}) => {
 
     const freqRef = useRef(null);
     const fullLenRef = useRef(null);
@@ -100,4 +100,4 @@ const data = ({text, textIn}) => {
     )
 }
 
-export default data
+export default Data

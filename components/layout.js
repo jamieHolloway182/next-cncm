@@ -1,7 +1,7 @@
-import Header from './header'
+import Header from './Header'
 import styles from '../styles/layout.module.css'
 
-const layout = ({body}) => {
+const Layout = ({body}) => {
     return (
         <div>
            <Header></Header>
@@ -28,4 +28,4 @@ const layout = ({body}) => {
     )
 }
 
-export default layout
+export default Layout

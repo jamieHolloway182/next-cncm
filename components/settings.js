@@ -1,4 +1,4 @@
-const settings = ({swap, clear, reverse, copy, input, enc, dec}) => {
+const Settings = ({swap, clear, reverse, copy, input, enc, dec}) => {
     return (
         <div>
             <div id="options">
@@ -14,4 +14,4 @@ const settings = ({swap, clear, reverse, copy, input, enc, dec}) => {
     )
 }
 
-export default settings
+export default Settings
