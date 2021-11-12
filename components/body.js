@@ -1,4 +1,4 @@
-import Data  from './Data'
+import Data from './Data'
 import Settings from './Settings'
 import styles from '../styles/body.module.css'
 import {useRef, useEffect, useState} from 'react'
