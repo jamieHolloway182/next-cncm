@@ -1,0 +1,9 @@
+.ioTextArea textarea{
+    resize: none;
+}
+
+.ioTextArea {
+    height:100%;
+    width: 100%;
+    min-width: 250px;
+}
